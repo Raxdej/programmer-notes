@@ -1,0 +1,121 @@
+.note-detail {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg);
+}
+
+.note-detail.empty {
+  justify-content: center;
+  align-items: center;
+}
+
+.note-detail .placeholder {
+  text-align: center;
+  color: var(--text);
+}
+
+.note-detail .placeholder svg {
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.note-detail .placeholder p {
+  font-size: 0.9rem;
+}
+
+.note-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.note-info h2 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  color: var(--text-h);
+}
+
+.note-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.language-badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border-radius: 4px;
+  text-transform: lowercase;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.tags {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--border);
+  color: var(--text);
+  border-radius: 3px;
+}
+
+.note-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.copy-btn,
+.delete-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.copy-btn:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.copy-btn.copied {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #fef2f2;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.code-container {
+  flex: 1;
+  padding: 1rem;
+  overflow: auto;
+}
