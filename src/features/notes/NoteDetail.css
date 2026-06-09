@@ -119,3 +119,18 @@
   padding: 1rem;
   overflow: auto;
 }
+
+.code-container pre,
+.code-container code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.code-container pre {
+  counter-reset: line;
+}
+
+.code-container code {
+  display: block !important;
+}

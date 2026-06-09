@@ -7,13 +7,12 @@ export default function SyntaxView({ code, language }) {
       language={language}
       style={oneDark}
       showLineNumbers
-      wrapLines
+      lineNumberStyle={{ minWidth: '2.5em' }}
       customStyle={{
         margin: 0,
-        padding: '1rem',
+        padding: '0',
         fontSize: '0.85rem',
-        background: 'var(--code-bg)',
-        borderRadius: '6px'
+        borderRadius: '6px',
       }}
     >
       {code}
